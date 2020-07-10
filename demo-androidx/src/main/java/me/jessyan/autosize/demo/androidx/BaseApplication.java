@@ -21,6 +21,7 @@ import android.util.DisplayMetrics;
 
 import java.util.Locale;
 
+import me.jessyan.autosize.AutoAdaptStrategy;
 import me.jessyan.autosize.AutoSize;
 import me.jessyan.autosize.AutoSizeConfig;
 import me.jessyan.autosize.onAdaptListener;

@@ -18,6 +18,7 @@ package me.jessyan.autosize;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
+import android.util.Log;
 
 import static me.jessyan.autosize.AutoSizeConfig.DEPENDENCY_ANDROIDX;
 import static me.jessyan.autosize.AutoSizeConfig.DEPENDENCY_SUPPORT;
@@ -61,7 +62,7 @@ public class ActivityLifecycleCallbacksImpl implements Application.ActivityLifec
                 ((android.support.v4.app.FragmentActivity) activity).getSupportFragmentManager().registerFragmentLifecycleCallbacks(mFragmentLifecycleCallbacks, true);
             }
         }
-
+        Log.e("wxq","onActivityCreated");
         //Activity 中的 setContentView(View) 一定要在 super.onCreate(Bundle); 之后执行
         if (mAutoAdaptStrategy != null) {
             mAutoAdaptStrategy.applyAdapt(activity, activity);

@@ -685,7 +685,7 @@ public final class AutoSizeConfig {
      * <meta-data android:name="design_height_in_dp"
      *            android:value="640"/>
      * </pre>
-     *
+     *获取数据manifest
      * @param context {@link Context}
      */
     private void getMetaData(final Context context) {

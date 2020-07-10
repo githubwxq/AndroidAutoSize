@@ -133,6 +133,7 @@ public final class AutoSizeCompat {
      *                      {@param sizeInDp} 则应该填写设计图的总高度
      * @param isBaseOnWidth 是否按照宽度进行等比例适配, {@code true} 为以宽度进行等比例适配, {@code false} 为以高度进行等比例适配
      * @see <a href="https://mp.weixin.qq.com/s/d9QCoBP6kV9VSWvVldVVwA">今日头条官方适配方案</a>
+     * 核心方法就是这个 可以手动调用
      */
     public static void autoConvertDensity(Resources resources, float sizeInDp, boolean isBaseOnWidth) {
         Preconditions.checkNotNull(resources, "resources == null");
